@@ -1,0 +1,22 @@
+public class CheckAscendingOrder {
+    public static void main(String[] args) {
+        // Initialize the array
+        int[] numbers = {1, 2, 3, 4, 5};
+        boolean isSorted = true;
+        
+        // Loop through the array and check if it's sorted
+        for (int i = 0; i < numbers.length - 1; i++) {
+            if (numbers[i] > numbers[i + 1]) {
+                isSorted = false;
+                break;
+            }
+        }
+        
+        // Print the result
+        if (isSorted) {
+            System.out.println("The array is sorted in ascending order.");
+        } else {
+            System.out.println("The array is not sorted in ascending order.");
+        }
+    }
+}
