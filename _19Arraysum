@@ -1,0 +1,14 @@
+public class ArraySum {
+    public static void main(String[] args) {
+        // Initialize the array
+        int[] numbers = {2, 4, 6, 8};
+               int sum = 0;
+      
+        for (int number : numbers) {
+            sum += number;
+        }
+        
+        // Print the result
+        System.out.println("The sum of the array elements is: " + sum);
+    }
+}
