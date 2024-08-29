@@ -1,0 +1,18 @@
+public class ArrayAverage {
+    public static void main(String[] args) {
+        // Initialize the array
+        int[] numbers = {1, 2, 3, 4, 5};
+        int sum = 0;
+        
+        // Loop through the array and calculate the sum
+        for (int number : numbers) {
+            sum += number;
+        }
+        
+        // Calculate the average
+        double average = (double) sum / numbers.length;
+        
+        // Print the result
+        System.out.println("The average of the array elements is: " + average);
+    }
+}
